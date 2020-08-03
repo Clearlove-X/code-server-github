@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline'; manifest-src 'self'; img-src 'self';">
+	<title>登录-云上IDE</title>
+	<link rel="icon" href="./static/out/vs/server/src/media/favicon.ico" type="image/x-icon" />
+	<link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+	<link rel="apple-touch-icon" href="./static/out/vs/server/src/media/code-server.png" />
+	<link rel="apple-touch-icon" href="./static/out/vs/server/src/media/logo.svg" />
+	<link rel="apple-touch-icon" href="./static/out/vs/server/src/media/bg.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link href="./static/out/vs/server/src/media/login.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+	<div id="header">
+		<span class="logo"><a href="https://cloud.inspur.com"  target="_blank"><img src="./static/out/vs/server/src/media/logo.svg"/></a></span>
+	</div>
+						<div id="kc-form-wrapper" class="">
+							<div id="login-content" class="content">
+								<div class="ad">
+									<div class="ad-title">
+										<h3>云上IDE</h3>
+										<span>提供给用户在线代码编辑、代码提示、代码诊断、编译、运行等一系列从代码编写到启动运行过程中必要的功能服务。</span>
+									</div>
+									<a href="javascript:void(0);"><img src="./static/out/vs/server/src/media/bg.png"/></a>
+								</div>
+									<form class="login-form" method="post">
+										<!--<h2 class="subtitle">
+											工作空间密码
+										</h2>-->
+										<div class="field">
+											<!-- The onfocus code places the cursor at the end of the value. -->
+											<input name="password" type="password" class="input" value=""  placeholder="工作空间密码"
+												   required autofocus
+												   onfocus="const value=this.value;this.value='';this.value=value;">
+										</div>
+										<button class="button" type="submit">
+											<span class="label">登录</span>
+										</button>
+										<div class="error-display" style="display:none">{{ERROR}}</div>
+									</form>
+				</div>
+			</div>
+		</div>
+
+	<div class="foot">
+		<footer>
+			<span class="copy-right">
+				<span>©1996 - 2019 INSPUR Co., Ltd.</span>
+			</span>
+		</footer>
+	</div>
+
+</body>
+</html>
