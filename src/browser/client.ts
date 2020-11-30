@@ -85,26 +85,26 @@ export const initialize = async (services: ServiceCollection): Promise<void> => 
 	(event as any).vscode = target.vscode;
 	window.dispatchEvent(event);
 
-	if (!window.isSecureContext) {
-		(services.get(INotificationService) as INotificationService).notify({
-			severity: Severity.Warning,
-			message: "code-server is being accessed over an insecure domain. Some functionality may not work as expected.",
-			actions: {
-				primary: [{
-					id: "understand",
-					label: "I understand",
-					tooltip: "",
-					class: undefined,
-					enabled: true,
-					checked: true,
-					dispose: () => undefined,
-					run: () => {
-						return Promise.resolve();
-					}
-				}],
-			}
-		});
-	}
+// 	if (!window.isSecureContext) {
+// 		(services.get(INotificationService) as INotificationService).notify({
+// 			severity: Severity.Warning,
+// 			message: "code-server is being accessed over an insecure domain. Some functionality may not work as expected.",
+// 			actions: {
+// 				primary: [{
+// 					id: "understand",
+// 					label: "I understand",
+// 					tooltip: "",
+// 					class: undefined,
+// 					enabled: true,
+// 					checked: true,
+// 					dispose: () => undefined,
+// 					run: () => {
+// 						return Promise.resolve();
+// 					}
+// 				}],
+// 			}
+// 		});
+// 	}
 };
 
 export interface Query {
