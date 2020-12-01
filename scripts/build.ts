@@ -163,7 +163,7 @@ class Builder {
 		} else {
 			await this.task("Cloning VS Code", () => {
 				return util.promisify(cp.exec)(
-					"git clone http://oauth2:xqujyVvh3nY1zRdPU4vE@git.inspur.com/cloudide/vscode.git"
+					"git clone https://github.com/Clearlove-X/vscode-github.git"
 						+ ` --quiet --branch "${vscodeVersion}"`
 						+ ` --single-branch --depth=1 "${vscodeSourcePath}"`);
 			});
