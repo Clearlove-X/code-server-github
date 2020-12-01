@@ -5,7 +5,7 @@ import { Extensions, IConfigurationRegistry } from "vs/platform/configuration/co
 import { registerSingleton } from "vs/platform/instantiation/common/extensions";
 import { ServiceCollection } from "vs/platform/instantiation/common/serviceCollection";
 import { ILocalizationsService } from "vs/platform/localizations/common/localizations";
-import { INotificationService, Severity } from "vs/platform/notification/common/notification";
+// import { INotificationService, Severity } from "vs/platform/notification/common/notification";
 import { Registry } from "vs/platform/registry/common/platform";
 import { PersistentConnectionEventType } from "vs/platform/remote/common/remoteAgentConnection";
 import { ITelemetryService } from "vs/platform/telemetry/common/telemetry";
